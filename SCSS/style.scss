@@ -344,6 +344,8 @@ template {
 4.0 Clearings
 --------------------------------------------------------------*/
 
+.e3_workshop:before,
+.e3_workshop:after,
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -375,6 +377,7 @@ template {
     table-layout: fixed;
 }
 
+.e3_workshop:after,
 .clear:after,
 .entry-content:after,
 .entry-footer:after,
@@ -1276,6 +1279,7 @@ a:hover .nav-title,
 
 .post-thumbnail {
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .post-thumbnail a img {
@@ -3198,6 +3202,17 @@ object {
     h6 {
         font-size: 16px;
         font-size: 1rem;
+    }
+
+    .post-thumbnail {
+        width: 30%;
+        float: left;
+        margin-right: 3%;
+    }
+
+    .entry-content {
+        width: 66%;
+        float: right;
     }
 
     .entry-content blockquote.alignleft,
