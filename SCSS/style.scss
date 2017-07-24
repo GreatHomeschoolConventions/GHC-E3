@@ -1179,7 +1179,7 @@ a:active {
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 
-    &.button {
+    &.button:not(.wc-forward) {
         background-color: $ghc-orange;
         color: white;
         padding: 1em 2em;
