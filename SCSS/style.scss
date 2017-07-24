@@ -1861,6 +1861,10 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
     padding: 2.5em 0 0;
 }
 
+.woocommerce-info.wc-memberships-message {
+    background-color: $ghc-blue;
+}
+
 /*--------------------------------------------------------------
 13.4 Posts
 --------------------------------------------------------------*/
