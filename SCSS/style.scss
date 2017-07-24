@@ -1,3 +1,6 @@
+$ghc-blue:            #00456a;
+$ghc-orange:          #f05033;
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -121,7 +124,7 @@ dfn {
 
 mark {
     background-color: #eee;
-    color: #222;
+    color: $ghc-blue;
 }
 
 small {
@@ -403,8 +406,8 @@ button,
 input,
 select,
 textarea {
-    color: #333;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    color: $ghc-blue;
+    font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
     font-size: 15px;
     font-size: 0.9375rem;
     font-weight: 400;
@@ -957,7 +960,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-    color: #222;
+    color: $ghc-blue;
     border-color: #333;
 }
 
@@ -982,7 +985,7 @@ input[type="checkbox"] + label {
 button,
 input[type="button"],
 input[type="submit"] {
-    background-color: #222;
+    background-color: $ghc-blue;
     border: 0;
     -webkit-border-radius: 2px;
     border-radius: 2px;
@@ -1013,7 +1016,7 @@ input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
     background-color: #ddd;
-    color: #222;
+    color: $ghc-blue;
 }
 
 button:hover,
@@ -1041,24 +1044,24 @@ input[type="submit"].secondary:focus {
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
     color: #333;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 :-moz-placeholder {
     color: #333;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 ::-moz-placeholder {
     color: #333;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
     opacity: 1;
     /* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
     color: #333;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1147,7 +1150,7 @@ td:last-child {
 --------------------------------------------------------------*/
 
 a {
-    color: #222;
+    color: $ghc-orange;
     text-decoration: none;
 }
 
@@ -1157,7 +1160,7 @@ a:focus {
 
 a:hover,
 a:active {
-    color: #000;
+    color: $ghc-blue;
     outline: 0;
 }
 
@@ -1169,8 +1172,8 @@ a:active {
 .site-footer .widget-area a,
 .posts-navigation a,
 .widget_authors a strong {
-    -webkit-box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
-    box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
+    -webkit-box-shadow: inset 0 -1px 0 $ghc-orange;
+    box-shadow: inset 0 -1px 0 $ghc-orange;
     -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
@@ -1256,9 +1259,9 @@ a:hover .nav-title,
 .widget .widget-title a:hover,
 .widget ul li a:focus,
 .widget ul li a:hover {
-    color: #000;
-    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    color: $ghc-orange;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 $ghc-orange;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 $ghc-orange;
 }
 
 /* Fixes linked images */
@@ -1270,7 +1273,7 @@ a:hover .nav-title,
 
 .post-navigation a:focus .icon,
 .post-navigation a:hover .icon {
-    color: #222;
+    color: $ghc-blue;
 }
 
 /*--------------------------------------------------------------
@@ -1316,7 +1319,7 @@ a:hover .nav-title,
 }
 
 .navigation-top a {
-    color: #222;
+    color: $ghc-blue;
     font-weight: 600;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
@@ -1402,7 +1405,7 @@ a:hover .nav-title,
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #222;
+    color: $ghc-blue;
     display: none;
     font-size: 14px;
     font-size: 0.875rem;
@@ -1455,7 +1458,7 @@ a:hover .nav-title,
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #222;
+    color: $ghc-blue;
     display: block;
     font-size: 16px;
     right: -0.5em;
@@ -1579,7 +1582,7 @@ body {
 
 .site-title,
 .site-title a {
-    color: #222;
+    color: $ghc-blue;
     opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
 }
 
@@ -1838,7 +1841,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .twentyseventeen-panel .recent-posts .entry-header .edit-link {
-    color: #222;
+    color: $ghc-blue;
     display: inline-block;
     font-size: 11px;
     font-size: 0.6875rem;
@@ -1884,7 +1887,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
-    color: #222;
+    color: $ghc-blue;
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 800;
@@ -1897,7 +1900,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .entry-title a {
-    color: #333;
+    color: $ghc-blue;
     text-decoration: none;
     margin-left: -2px;
 }
@@ -2038,7 +2041,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .blog .entry-meta a.post-edit-link,
 .archive .entry-meta a.post-edit-link,
 .search .entry-meta a.post-edit-link {
-    color: #222;
+    color: $ghc-blue;
     display: inline-block;
     margin-left: 1em;
     white-space: nowrap;
@@ -2102,7 +2105,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page-links a .page-number {
-    color: #222;
+    color: $ghc-blue;
 }
 
 /* Entry footer */
@@ -2149,7 +2152,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .entry-footer .edit-link a.post-edit-link {
-    background-color: #222;
+    background-color: $ghc-blue;
     -webkit-border-radius: 2px;
     border-radius: 2px;
     -webkit-box-shadow: none;
@@ -2428,7 +2431,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .comment-metadata a.comment-edit-link {
-    color: #222;
+    color: $ghc-blue;
     margin-left: 1em;
 }
 
@@ -2445,7 +2448,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .comment-reply-link .icon {
-    color: #222;
+    color: $ghc-blue;
     left: -2em;
     height: 1em;
     position: absolute;
@@ -2493,7 +2496,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 h2.widget-title {
-    color: #222;
+    color: $ghc-blue;
     font-size: 13px;
     font-size: 0.8125rem;
     font-weight: 800;
@@ -2836,13 +2839,14 @@ object {
 .mejs-controls a.mejs-horizontal-volume-slider:hover {
     background: transparent;
     border: 0;
+    box-shadow: none;
 }
 
 /* Playlist Color Overrides: Light */
 
 .site-content .wp-playlist-light {
     border-color: #eee;
-    color: #222;
+    color: $ghc-blue;
 }
 
 .site-content .wp-playlist-light .wp-playlist-current-item .wp-playlist-item-album {
@@ -2875,7 +2879,7 @@ object {
 /* Playlist Color Overrides: Dark */
 
 .site-content .wp-playlist-dark {
-    background: #222;
+    background: $ghc-blue;
     border-color: #333;
 }
 
@@ -2909,13 +2913,13 @@ object {
 .site-content .wp-playlist-dark .wp-playlist-item:focus {
     border-bottom-color: rgba(0, 0, 0, 0);
     background-color: #aaa;
-    color: #222;
+    color: $ghc-blue;
 }
 
 .site-content .wp-playlist-dark a.wp-playlist-caption:hover,
 .site-content .wp-playlist-dark .wp-playlist-item:hover a,
 .site-content .wp-playlist-dark .wp-playlist-item:focus a {
-    color: #222;
+    color: $ghc-blue;
 }
 
 /* Playlist Style Overrides */
@@ -3127,7 +3131,7 @@ object {
 
 .no-svg .social-navigation a {
     background: transparent;
-    color: #222;
+    color: $ghc-blue;
     height: auto;
     width: auto;
 }
@@ -4254,7 +4258,7 @@ object {
     .twentyseventeen-front-page.has-header-video .site-title,
     .twentyseventeen-front-page.has-header-image .site-title a,
     .twentyseventeen-front-page.has-header-video .site-title a {
-        color: #222 !important; /* Make sure color schemes don't affect to print */
+        color: $ghc-blue !important; /* Make sure color schemes don't affect to print */
     }
 
     h2,
