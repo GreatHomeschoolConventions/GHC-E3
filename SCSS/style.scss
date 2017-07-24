@@ -1178,6 +1178,16 @@ a:active {
     transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+
+    &.button {
+        background-color: $ghc-orange;
+        color: white;
+        padding: 1em 2em;
+        border-radius: 5px;
+        display: inline-block;
+
+        &:hover { color: $ghc-blue }
+    }
 }
 
 .entry-title a,
