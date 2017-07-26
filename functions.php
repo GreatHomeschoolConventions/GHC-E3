@@ -15,7 +15,7 @@ add_action( 'wp_enqueue_scripts', 'ghc_e3_minified_css', 5 );
 function ghc_e3_logo_size() {
     add_theme_support( 'custom-logo', array(
         'width'       => 1200,
-        'height'      => 414,
+        'height'      => 420,
         'flex-width'  => true,
     ) );
 
