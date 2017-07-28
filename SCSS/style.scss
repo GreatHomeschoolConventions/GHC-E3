@@ -1185,8 +1185,11 @@ a:active {
         padding: 1em 2em;
         border-radius: 5px;
         display: inline-block;
+        margin: 0 1em 1em 0;
 
         &:hover { color: $ghc-blue }
+
+        & .dashicons { margin-top: 3px; }
     }
 }
 
@@ -1875,13 +1878,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
     background-color: $ghc-blue;
 }
 
-.author-bio-toggle {
-    .dashicons-arrow-down-alt2 {
-        margin-top: 3px;
-
-        #author-bio.expanded + & { transform: rotate(180deg); }
-    }
-}
+.author-bio.expanded .dashicons-arrow-down-alt2 { transform: rotate(180deg); }
 
 /*--------------------------------------------------------------
 13.4 Posts
