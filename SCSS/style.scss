@@ -1875,6 +1875,14 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
     background-color: $ghc-blue;
 }
 
+.author-bio-toggle {
+    .dashicons-arrow-down-alt2 {
+        margin-top: 3px;
+
+        #author-bio.expanded + & { transform: rotate(180deg); }
+    }
+}
+
 /*--------------------------------------------------------------
 13.4 Posts
 --------------------------------------------------------------*/
