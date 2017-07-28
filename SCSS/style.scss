@@ -1025,7 +1025,7 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-    background: #767676;
+    background: $ghc-orange;
 }
 
 button.secondary:hover,
@@ -1985,7 +1985,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .page-numbers.current {
-    color: #767676;
+    color: $ghc-orange;
     display: inline-block;
 }
 
@@ -2019,7 +2019,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 .prev.page-numbers:hover,
 .next.page-numbers:focus,
 .next.page-numbers:hover {
-    background-color: #767676;
+    background-color: $ghc-orange;
     color: #fff;
 }
 
@@ -2121,7 +2121,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page-links .page-number {
-    color: #767676;
+    color: $ghc-orange;
     display: inline-block;
     padding: 0.5em 1em;
 }
@@ -2166,7 +2166,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .entry-footer .cat-links .icon,
 .entry-footer .tags-links .icon {
-    color: #767676;
+    color: $ghc-orange;
     left: 0;
     margin-right: 0.5em;
     position: absolute;
@@ -2347,7 +2347,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .social-navigation a {
-    background-color: #767676;
+    background-color: $ghc-orange;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     color: #fff;
@@ -2880,7 +2880,7 @@ object {
 }
 
 .site-content .wp-playlist-light .wp-playlist-current-item .wp-playlist-item-artist {
-    color: #767676;
+    color: $ghc-orange;
 }
 
 .site-content .wp-playlist-light .wp-playlist-item {
@@ -2892,7 +2892,7 @@ object {
 .site-content .wp-playlist-light .wp-playlist-item:hover,
 .site-content .wp-playlist-light .wp-playlist-item:focus {
     border-bottom-color: rgba(0, 0, 0, 0);
-    background-color: #767676;
+    background-color: $ghc-orange;
     color: #fff;
 }
 
