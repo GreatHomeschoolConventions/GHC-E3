@@ -1939,6 +1939,8 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
     letter-spacing: 0.1818em;
     padding-bottom: 0.25em;
     text-transform: uppercase;
+
+    .dashicons-before:before { margin: -2px 3px 0 0; }
 }
 
 .entry-meta a {
