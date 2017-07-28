@@ -1,18 +1,19 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    // Watch task config
-    watch: {
-        styles: {
-            files: "SCSS/*.scss",
-            tasks: ['sass', 'postcss'],
-        },
-    },
-    sass: {
+    browserSync: {
         dev: {
-            files: {
-                "style.min.css" : "SCSS/style.scss",
-            }
-        }
+            bsFiles: {
+                src : ['*.css', '**/*.php', '**/*.js', '!node_modules'],
+            },
+            options: {
+                watchTask: true,
+                proxy: "https://ghc.dev",
+                https: {
+                    key: "/Users/andrew/github/dotfiles/local-dev.key",
+                    cert: "/Users/andrew/github/dotfiles/local-dev.crt",
+                }
+            },
+        },
     },
     postcss: {
         options: {
@@ -30,24 +31,34 @@ module.exports = function (grunt) {
             src: '*.min.css',
         }
     },
-    browserSync: {
+    sass: {
         dev: {
-            bsFiles: {
-                src : ['*.css', '**/*.php', '**/*.js', '!node_modules'],
+            files: {
+                "style.min.css" : "SCSS/style.scss",
+            }
+        }
+    },
+    uglify: {
+        custom: {
+            files: {
+                'js/ghc-e3-author-bio.min.js': ['js/ghc-e3-author-bio.js'],
             },
-            options: {
-                watchTask: true,
-                proxy: "https://ghc.dev",
-                https: {
-                    key: "/Users/andrew/github/dotfiles/local-dev.key",
-                    cert: "/Users/andrew/github/dotfiles/local-dev.crt",
-                }
-            },
+        },
+    },
+    watch: {
+        styles: {
+            files: "SCSS/*.scss",
+            tasks: ['sass', 'postcss'],
+        },
+        javascript: {
+            files: ["js/*.js", "!js/*.min.js"],
+            tasks: ['uglify'],
         },
     },
   });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
