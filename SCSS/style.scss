@@ -2356,6 +2356,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
         h3 {
             font-weight: normal;
             font-size: 1em;
+            padding-top: 0;
         }
 
         @media screen and (max-width: 599px) {
@@ -2392,7 +2393,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
         &.expanded .dashicons { top: 0.2em; }
     }
 
-    .excerpt { font-size: 0.8em; }
+    .excerpt { 
+        &, p { font-size: 0.8em; }
+
+        ul, li { text-align: left; }
+    }
 
     .link-more { display: none; }
 }
