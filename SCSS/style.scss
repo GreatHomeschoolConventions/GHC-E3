@@ -1888,6 +1888,22 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
     transition: all 0.5s ease;
 
     &.expanded .dashicons-arrow-down-alt2 { transform: rotate(180deg); }
+
+    &.workshop-description,
+    &.no-button {
+        font-size: 0.8em;
+        cursor: pointer;
+
+        &, &:hover { box-shadow: none; }
+
+        .dashicons {
+            font-size: 0.8em;
+            position: relative;
+            top: 1em;
+        }
+
+        &.expanded .dashicons { top: 0.2em; }
+    }
 }
 
 /*--------------------------------------------------------------
@@ -2411,26 +2427,16 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
             &:nth-child(6n+1), &:nth-child(6n+2), &:nth-child(6n+3) { background-color: white; }
         }
+
+        .speaker-company {
+            box-shadow: none !important;
+            cursor: default;
+        }
     }
 
     del { color: $ghc-orange; }
 
-    .workshop-description {
-        font-size: 0.8em;
-        cursor: pointer;
-
-        &, &:hover { box-shadow: none; }
-
-        .dashicons {
-            font-size: 0.8em;
-            position: relative;
-            top: 1em;
-        }
-
-        &.expanded .dashicons { top: 0.2em; }
-    }
-
-    .excerpt { 
+    .excerpt {
         &, p { font-size: 0.8em; }
 
         ul, li { text-align: left; }
