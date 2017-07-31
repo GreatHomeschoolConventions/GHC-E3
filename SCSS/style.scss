@@ -2308,6 +2308,97 @@ body:not(.twentyseventeen-front-page) .entry-header {
     margin-bottom: 3em;
 }
 
+.page-template-template-purchase {
+    .navigation-top,
+    .entry-header { display: none; }
+
+    .site-branding {
+        .wrap { text-align: center; }
+    }
+
+    .site-content { background-color: #e0dfe4; }
+
+    .entry-content {
+        width: 100%;
+        float: none;
+        font-size: 1.25rem;
+    }
+
+    h1, h2, h3 {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: $ghc-orange;
+        margin-bottom: 0;
+    }
+
+    h2 { color: $ghc-blue; }
+
+    .e3-shortcode-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article.e3_workshop {
+        text-align: center;
+        padding: 1em;
+        width: 100%;
+
+        .wp-post-image { border: 5px solid white; }
+
+        h3 {
+            font-weight: normal;
+            font-size: 1em;
+        }
+
+        @media screen and (max-width: 599px) {
+            &:nth-child(odd) {
+                background-color: white;
+
+                .wp-post-image { border-color: $ghc-blue; }
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 899px) {
+            width: calc(50%);
+
+            &:nth-child(4n+1), &:nth-child(4n+2) {
+                background-color: white;
+
+                .wp-post-image { border-color: $ghc-blue; }
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            width: calc(33%);
+
+            &:nth-child(6n+1), &:nth-child(6n+2), &:nth-child(6n+3) {
+                background-color: white;
+
+                .wp-post-image { border-color: $ghc-blue; }
+            }
+        }
+    }
+
+    del { color: $ghc-orange; }
+
+    .speaker-name, .speaker-company { display: block; }
+
+    .speaker-name {
+        font-size: 1.5em;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    .excerpt { font-size: 0.8em; }
+
+    .link-more { display: none; }
+}
+
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
