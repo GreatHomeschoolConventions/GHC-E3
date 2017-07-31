@@ -1280,8 +1280,8 @@ a:hover .nav-title,
 /* Fixes linked images */
 .entry-content a img,
 .widget a img {
-    -webkit-box-shadow: 0 0 0 8px #fff;
-    box-shadow: 0 0 0 8px #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .post-navigation a:focus .icon,
