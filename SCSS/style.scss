@@ -1883,7 +1883,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
     background-color: $ghc-blue;
 }
 
-.author-bio.expanded .dashicons-arrow-down-alt2 { transform: rotate(180deg); }
+.expand-trigger.expanded .dashicons-arrow-down-alt2 { transform: rotate(180deg); }
 
 /*--------------------------------------------------------------
 13.4 Posts

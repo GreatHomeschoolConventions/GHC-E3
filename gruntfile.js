@@ -41,7 +41,7 @@ module.exports = function (grunt) {
     uglify: {
         custom: {
             files: {
-                'js/ghc-e3-author-bio.min.js': ['js/ghc-e3-author-bio.js'],
+                'js/ghc-e3-workshops.min.js': ['js/ghc-e3-workshops.js'],
             },
         },
     },
