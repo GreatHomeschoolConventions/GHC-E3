@@ -2397,6 +2397,20 @@ body:not(.twentyseventeen-front-page) .entry-header {
     .link-more { display: none; }
 }
 
+.buy-now {
+    padding: 2em;
+    text-align: center;
+
+    p { margin: 0; }
+
+    .entry-content & a.button {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 1rem 3rem;
+        margin-right: 0;
+    }
+}
+
 .speaker-name {
     font-size: 1.5em;
     text-transform: none;
