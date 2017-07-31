@@ -2314,11 +2314,38 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page-template-template-purchase {
-    .navigation-top,
+    .site-header,
     .entry-header { display: none; }
 
-    .site-branding {
-        .wrap { text-align: center; }
+    .wrap,
+    .content-area {
+        max-width: 100% !important;
+        padding: 0;
+    }
+
+    .entry-content {
+        > * {
+            max-width: 740px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+
+        > h1,
+        > h2,
+        > .buy-now {
+            margin-right: 0;
+            margin-left: 0;
+            max-width: 100%;
+            padding-right: 1em;
+            padding-left: 1em;
+
+            @media screen and (min-width: 768px) {
+                padding-right: calc(50% - 370px);
+                padding-left: calc(50% - 370px);
+            }
+        }
     }
 
     .site-content { background-color: #e0dfe4; }
@@ -2332,15 +2359,26 @@ body:not(.twentyseventeen-front-page) .entry-header {
     h1, h2, h3 {
         font-weight: 700;
         text-align: center;
+        padding-top: 0;
+    }
+
+    h1,
+    h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     h1 {
         font-size: 3em;
-        color: $ghc-orange;
+        color: white;
+        background-color: $ghc-orange;
         margin-bottom: 0;
     }
 
-    h2 { color: $ghc-blue; }
+    h2 {
+        color: $ghc-blue;
+        background-color: white;
+    }
 
     .e3-shortcode-container {
         display: flex;
@@ -2356,7 +2394,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
         h3 {
             font-weight: normal;
             font-size: 1em;
-            padding-top: 0;
         }
 
         @media screen and (max-width: 599px) {
@@ -2403,6 +2440,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .buy-now {
+    background-color: white;
     padding: 2em;
     text-align: center;
 
