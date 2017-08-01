@@ -10,5 +10,5 @@
 
 ?>
 <div class="site-info">
-    &copy;<?php echo date( 'Y' ); ?> <a href="https://www.greathomeschoolconventions.com/">Great Homeschool Conventions</a> | Proudly powered by <a href="https://wordpress.org/" target="_blank">WordPress</a> | Designed and Developed by <a href="https://andrewrminion.com/" target="_blank">AndrewRMinion Design</a>
+    &copy;<?php echo date( 'Y' ); ?> <a href="https://www.greathomeschoolconventions.com/">Great Homeschool Conventions</a> | Proudly powered by <a href="https://wordpress.org/" target="_blank">WordPress</a> | Designed and developed by <a href="https://andrewrminion.com/" target="_blank">AndrewRMinion Design</a>
 </div><!-- .site-info -->
