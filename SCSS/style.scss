@@ -1043,24 +1043,24 @@ input[type="submit"].secondary:focus {
 
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
-    color: #333;
+    color: #999;
     font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 :-moz-placeholder {
-    color: #333;
+    color: #999;
     font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 ::-moz-placeholder {
-    color: #333;
+    color: #999;
     font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
     opacity: 1;
     /* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
-    color: #333;
+    color: #999;
     font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
@@ -1880,8 +1880,35 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
     padding: 2.5em 0 0;
 }
 
-.woocommerce-info.wc-memberships-message {
-    background-color: $ghc-blue;
+.woocommerce {
+    &-checkout {
+        .entry-content {
+            width: 100%;
+            float: none;
+        }
+
+        & .wc-forward { display: none; }
+    }
+
+    .checkout .col2-set {
+        .col-1,
+        .col-2 {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    & &-message,
+    & &-info,
+    &-info.wc-memberships-message { background-color: $ghc-blue; }
+
+    &-checkout-review-order-table tr:not(.order-total) { display: none; }
+
+    input#place_order {
+        background-color: $ghc-orange;
+
+        &:focus, &:hover, &:active { background-color: $ghc-blue; }
+    }
 }
 
 .expand-trigger {
