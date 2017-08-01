@@ -2382,8 +2382,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
             margin-right: 0;
             margin-left: 0;
             max-width: 100%;
-            padding-right: 1em;
-            padding-left: 1em;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
 
             @media screen and (min-width: 768px) {
                 padding-right: calc(50% - 370px);
@@ -2417,6 +2417,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
         color: white;
         background-color: $ghc-orange;
         margin-bottom: 0;
+
+        @media screen and (max-width: 400px) { font-size: 2.5em; }
     }
 
     h2 {
@@ -2486,6 +2488,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
     .site-info {
         width: 100% !important;
         text-align: center;
+        padding: 0 1em;
     }
 }
 
