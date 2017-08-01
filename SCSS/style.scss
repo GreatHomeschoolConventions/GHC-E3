@@ -2358,7 +2358,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .page-template-template-purchase {
     .site-header,
-    .entry-header { display: none; }
+    .entry-header,
+    .site-footer .widget-area { display: none; }
 
     .wrap,
     .content-area {
@@ -2470,6 +2471,22 @@ body:not(.twentyseventeen-front-page) .entry-header {
     }
 
     .link-more { display: none; }
+
+    .site-footer {
+        margin-top: 0;
+        border-top: 0;
+        background-color: #e0dfe4;
+
+        a {
+            color: inherit;
+            box-shadow: none;
+        }
+    }
+
+    .site-info {
+        width: 100% !important;
+        text-align: center;
+    }
 }
 
 .buy-now {
