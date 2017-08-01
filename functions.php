@@ -28,3 +28,15 @@ function ghc_e3_logo_size() {
     add_image_size( 'twentyseventeen-featured-image', 300, 300, true );
 }
 add_action( 'after_setup_theme', 'ghc_e3_logo_size', 15 );
+
+/**
+ * Remove additional notes from checkout
+ * @param  array $fields WooCommerce fields
+ * @return array modified WooCommerce fields
+ */
+function ghc_e3_remove_order_notes( $fields ) {
+    unset( $fields['order']['order_comments'] );
+    return $fields;
+}
+add_filter( 'woocommerce_checkout_fields' , 'ghc_e3_remove_order_notes' );
+add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
