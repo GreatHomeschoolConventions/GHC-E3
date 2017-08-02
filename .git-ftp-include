@@ -2,3 +2,4 @@ style.min.css:SCSS/style.scss
 style.min.css.map:SCSS/style.scss
 
 js/ghc-e3-workshops.min.js:js/ghc-e3-workshops.js
+js/media-analytics.min.js:js/media-analytics.js

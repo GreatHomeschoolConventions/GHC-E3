@@ -8,6 +8,7 @@ function ghc_e3_minified_css() {
     wp_enqueue_style( 'twentyseventeen-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,800,800i' );
     wp_enqueue_script( 'ghc-e3-author-bio', get_stylesheet_directory_uri() . '/js/ghc-e3-workshops.min.js', array( 'jquery' ), NULL, true );
     wp_enqueue_style( 'dashicons' );
+    wp_enqueue_script( 'media-analytics', get_stylesheet_directory_uri() . '/js/media-analytics.min.js', array( 'jquery', 'wp-mediaelement' ), '2.3.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'ghc_e3_minified_css', 5 );
 

@@ -42,6 +42,7 @@ module.exports = function (grunt) {
         custom: {
             files: {
                 'js/ghc-e3-workshops.min.js': ['js/ghc-e3-workshops.js'],
+                'js/media-analytics.min.js': ['js/media-analytics.js'],
             },
         },
     },
