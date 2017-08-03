@@ -15,6 +15,22 @@
  * @version 1.0
  */
 
+function ghc_e3_purchase_optimization() {
+    wp_dequeue_style( 'simple-payments' );
+    wp_dequeue_style( 'woocommerce-layout' );
+    wp_dequeue_style( 'woocommerce-smallscreen' );
+    wp_dequeue_style( 'woocommerce-twenty-seventeen' );
+    wp_dequeue_style( 'wc-memberships-frontend' );
+    wp_dequeue_style( 'open-sans' );
+    wp_dequeue_style( 'jetpack_css' );
+
+    wp_dequeue_script( 'media-analytics' );
+    wp_dequeue_script( 'wp-mediaelement' );
+    wp_dequeue_script( 'woocommerce' );
+    wp_dequeue_script( 'wc-cart-fragments' );
+}
+add_action( 'wp_enqueue_scripts', 'ghc_e3_purchase_optizimation', 99 );
+
 get_header(); ?>
 
 <div class="wrap">
