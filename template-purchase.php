@@ -29,7 +29,7 @@ function ghc_e3_purchase_optimization() {
     wp_dequeue_script( 'woocommerce' );
     wp_dequeue_script( 'wc-cart-fragments' );
 }
-add_action( 'wp_enqueue_scripts', 'ghc_e3_purchase_optizimation', 99 );
+add_action( 'wp_enqueue_scripts', 'ghc_e3_purchase_optimization', 99 );
 
 get_header(); ?>
 
