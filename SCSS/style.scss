@@ -1909,6 +1909,13 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
         &:focus, &:hover, &:active { background-color: $ghc-blue; }
     }
+
+    &-account {
+        .entry-content {
+            width: initial;
+            float: none;
+        }
+    }
 }
 
 .expand-trigger {
